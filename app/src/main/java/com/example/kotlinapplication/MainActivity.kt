@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
      * Roll the dice and update the screen with the result.
      */
     private fun rollDice() {
-        val dice = Dice(6);
-        val rolledValue = dice.roll()
+        val dice = Dice(6); // obj with constructor
+        val rolledValue = dice.roll() // calling method
         val tvRoll: TextView = findViewById(R.id.tvRoll)
         val diceImage: ImageView = findViewById(R.id.imgDice)
         val toast = Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT)
